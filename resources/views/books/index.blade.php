@@ -22,6 +22,7 @@
                                 <td>{{ $book->name }}</td>
                                 <td>৳ {{ $book->price }}</td>
                                 <td>{{ $book->pages }}</td>
+                                {{-- <td>{{ optional($book->author)->name }}</td> --}}
                                 <td>{{ $book->author->name }}</td>
                                 <td class="d-flex">
                                     <a href="{{ route('books.edit', [$book]) }}" class="btn btn-warning btn-sm mr-2">Edit</a>
